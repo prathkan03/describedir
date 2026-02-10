@@ -1,0 +1,78 @@
+{
+  "$schema": "describedir-v1",
+  "root": "C:\\Users\\Jack\\Documents\\dev\\reboot\\src\\describedir",
+  "generated_at": "2026-02-06T18:58:35.876910+00:00",
+  "model": "openai/gpt-oss-20b",
+  "tree": {
+    "name": "describedir",
+    "type": "directory",
+    "path": ".",
+    "description": "Root package for describedir, providing CLI entry point, configuration, file\u2011I/O utilities, LLM client and prompt logic, schema definitions, and recursive traversal to build a JSON description of directory contents.",
+    "children": [
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "path": "__init__.py",
+        "description": "Defines package metadata and version for describedir.",
+        "size_bytes": 106,
+        "skipped": false
+      },
+      {
+        "name": "__main__.py",
+        "type": "file",
+        "path": "__main__.py",
+        "description": "Executes the CLI entry point by calling cli.main.",
+        "size_bytes": 51,
+        "skipped": false
+      },
+      {
+        "name": "cli.py",
+        "type": "file",
+        "path": "cli.py",
+        "description": "Parses arguments, builds directory tree, orchestrates LLM calls, and writes JSON output.",
+        "size_bytes": 4691,
+        "skipped": false
+      },
+      {
+        "name": "config.py",
+        "type": "file",
+        "path": "config.py",
+        "description": "Holds ignore patterns, LLM defaults, file size limits, and output filename.",
+        "size_bytes": 804,
+        "skipped": false
+      },
+      {
+        "name": "fileio.py",
+        "type": "file",
+        "path": "fileio.py",
+        "description": "Detects binary files and reads text content with optional truncation.",
+        "size_bytes": 1471,
+        "skipped": false
+      },
+      {
+        "name": "llm.py",
+        "type": "file",
+        "path": "llm.py",
+        "description": "Creates OpenAI client, constructs prompts, batches file descriptions, and handles retries.",
+        "size_bytes": 7982,
+        "skipped": false
+      },
+      {
+        "name": "schema.py",
+        "type": "file",
+        "path": "schema.py",
+        "description": "Dataclass models for FileNode and DescriptionOutput with JSON serialization.",
+        "size_bytes": 1325,
+        "skipped": false
+      },
+      {
+        "name": "traversal.py",
+        "type": "file",
+        "path": "traversal.py",
+        "description": "Recursively builds a FileNode tree and yields directories bottom\u2011up for processing.",
+        "size_bytes": 2703,
+        "skipped": false
+      }
+    ]
+  }
+}
