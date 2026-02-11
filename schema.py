@@ -1,4 +1,3 @@
-"""Data models for the describedir output."""
 
 from __future__ import annotations
 
